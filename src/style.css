@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-html {
+html, body {
   background-color: hsl(0, 0%, 95%);
 }
 .container {
   display: flex;
   height: 100vh;
+  width:fit-content;
 
 }
+
 .row > * {
   padding-right:0px;
   padding-left:0px;
@@ -31,9 +33,12 @@ p {
 .card {
   height:30rem;
   padding: 10%;
-  width:20rem;
+  width:19rem;
 }
-
+h2{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
 .info {
   margin-bottom: 30%;
   margin-top: 5%;
@@ -98,21 +103,35 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    width: 100%;
+    width: 90%;
     display: block;
     align-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 20%;
+  }
+  .card {
+    height:28rem;
+
   }
   .col {
     padding: 0px;
     margin: 0px;
+  }
+  p{
+    padding-top:10%;
+    padding-bottom: 0%;
+  }
+  .info{
+    margin-bottom: 10%;
   }
   .sedan-card {
     width:100%;
   border-radius: 10px 10px 0px 0px;
 
 
+}
+h2{
+  padding-top: 10%;
 }
 .suv-card{
   width:100%;
